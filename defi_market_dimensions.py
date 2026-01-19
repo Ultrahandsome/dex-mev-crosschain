@@ -118,7 +118,7 @@ class TransactionDimension:
     @property
     def gas_cost_eth(self) -> Decimal:
         """Calculate gas cost in ETH"""
-        return (self.gas_price_gwei * self.gas_used) / Decimal("1e9")
+        return (self.gas_price_gwei * self.gas_used) / Decimal("1000000000")
 
 
 @dataclass
@@ -296,7 +296,7 @@ def aggregate_gas_metrics(activities: List[DeFiMarketActivity]) -> Dict:
         total_gas += activity.transaction.gas_used
         total_gas_cost_usd += activity.transaction.transaction_fee_usd
     
-    avg_gas = total_gas / len(activities) if activities else 0
+    avg_gas = Decimal(total_gas) / Decimal(len(activities)) if activities else Decimal("0")
     avg_gas_cost = total_gas_cost_usd / len(activities) if activities else Decimal("0")
     
     return {

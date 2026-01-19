@@ -5,6 +5,7 @@ This module demonstrates how to use the core dimensions to capture and analyze
 DeFi market activity across different scenarios.
 """
 
+import json
 from datetime import datetime
 from decimal import Decimal
 from defi_market_dimensions import (
@@ -333,5 +334,4 @@ if __name__ == "__main__":
     # Example: Convert activity to dictionary for storage/API response
     activity = example_uniswap_swap()
     print("=== Activity as Dictionary (for API/Storage) ===")
-    import json
     print(json.dumps(activity.to_dict(), indent=2, default=str))
