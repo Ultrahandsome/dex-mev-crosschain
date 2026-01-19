@@ -1,0 +1,13 @@
+# No external dependencies required!
+# This project uses only Python 3.7+ standard library:
+# - dataclasses
+# - datetime
+# - decimal
+# - enum
+# - typing
+
+# For development/testing (optional):
+# pytest>=7.0.0
+# black>=22.0.0
+# mypy>=0.950
+# flake8>=4.0.0
