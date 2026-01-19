@@ -1,0 +1,18 @@
+# Web3 blockchain interaction
+web3>=6.0.0
+
+# Data processing and analysis
+pandas>=1.5.0
+numpy>=1.21.0
+
+# Visualization
+matplotlib>=3.5.0
+
+# Configuration and utilities  
+pyyaml>=6.0
+python-dotenv>=0.19.0
+tenacity>=8.0.0
+tqdm>=4.64.0
+
+# Python version requirement (this project uses Python 3.9+ features like union types)
+# Ensure you're using Python 3.9 or higher

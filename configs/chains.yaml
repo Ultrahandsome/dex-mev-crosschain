@@ -1,0 +1,16 @@
+ethereum:
+  chain_id: 1
+  # 优先使用 .env 中的 ETHEREUM_RPC_URL；这里保留几个公开候选以容灾
+  rpc_fallbacks:
+    - https://eth.llamarpc.com
+    - https://rpc.ankr.com/eth
+    - https://cloudflare-eth.com
+  explorer: https://etherscan.io
+
+arbitrum:
+  chain_id: 42161
+  rpc_fallbacks:
+    - https://arbitrum-one-rpc.publicnode.com
+    - https://arb1.arbitrum.io/rpc
+    - https://rpc.ankr.com/arbitrum
+  explorer: https://arbiscan.io

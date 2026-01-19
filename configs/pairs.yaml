@@ -1,0 +1,4 @@
+pairs:
+  - base: "WETH"
+    quote: "USDC"
+    fees: [500, 3000]
